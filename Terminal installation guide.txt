@@ -1,0 +1,29 @@
+1. Install zsh
+sudo apt install zsh
+
+2. Change shell to zsh
+chsh -s /usr/bin/zsh
+
+3. Install font (dowwnload and double click to install)
+https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+
+4. Edit terminal font: chọn font "MesloLGS NF Regular", tùy thuộc vào Terminal đang sử dụng mà điều chỉnh thích hợp.
+
+5. Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+6. Install powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+7. Install config (hoặc chạy command  "p10k configure" để tự customize)
+cp zshrc ~/.zshrc
+cp p10k.zsh ~/.p10k.zsh
+
+8. Restart terminal: tắt và mở lại terminal
+
+==============
+1. Hệ điều hành đang hướng dẫn: Ubuntu 21.04, có thể áp dụng cho các hệ điều hành phiên bản thấp hơn. Nhưng chỉ đúng chính xác cho Ubuntu.
+2. Terminal khuyến khích sử dụng là Terrminator: sudo apt install terminator
